@@ -13,31 +13,11 @@
 
     <script type="text/babel">
 
-        class Componente extends React.Component {
-            render() {
-                return(
-                    <div>
-                        <h1>Qual sua linguagem favorita?</h1>
-                        <SubComponente linguagem="Javascript"/>
-                        <SubComponente linguagem="C++"/>
-                        <SubComponente linguagem="Java"/>
-                        <SubComponente linguagem="PHP"/>
-                    </div>
-                );
-            }
-        }
-
-        class SubComponente extends React.Component {
-            render() {
-                return(
-                    <div>
-                        <h2>{this.props.linguagem}</h2>
-                    </div>
-                );
-            }
-        }
-
-        ReactDOM.render(<Componente/>, document.getElementById('root'));
+        ReactDOM.render(
+            <h1>Hello, world!</h1>,
+            document.getElementById('root')
+        );
+        
     </script>
 
 </body>
